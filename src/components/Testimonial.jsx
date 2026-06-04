@@ -1,4 +1,4 @@
-import lines from "../assets/line 22.svg";
+
 import img1 from "../assets/Ellipse 263.png";
 import img2 from "../assets/Ellipse 264.png";
 import img3 from "../assets/Ellipse 265.png";

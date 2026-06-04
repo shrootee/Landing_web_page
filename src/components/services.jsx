@@ -1,4 +1,4 @@
-import lines from "../assets/line 22.svg";
+
 import vector from "../assets/Vector 5.svg";
 
 function Services() {
