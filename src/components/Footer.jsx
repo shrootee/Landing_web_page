@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <section className="bg-[#DDECDD] relative overflow-hidden">
+    <section  className="bg-[#DDECDD] relative overflow-hidden">
 
       <div className="max-w-[1200px] mx-auto px-4 py-16 lg:py-24">
 

@@ -7,11 +7,12 @@ import img9 from "../assets/image 348.png";
 import img10 from "../assets/Polygon 1.svg";
 import img11 from "../assets/image 348 (1).png";
 import vector from "../assets/Vector 5.svg";
+import polygon1 from "../assets/Polygon 1.svg";
 
 
 function Feature() {
   return (
-   <section className="relative overflow-hidden py-16 lg:py-24">
+   <section  className="relative overflow-hidden py-16 lg:py-24">
 
      <img
     src={vector2517}
@@ -62,6 +63,7 @@ function Feature() {
 
         {/* ================= TOP BLOCK ================= */}
 
+       
         <div
           className="
             flex
@@ -254,6 +256,8 @@ function Feature() {
             lg:gap-20
           "
         >
+
+
           {/* LEFT IMAGE */}
 
           <div
@@ -284,6 +288,47 @@ function Feature() {
               "
             />
           </div>
+
+           <img
+  src={polygon1}
+  alt=""
+  className="
+    absolute
+
+    left-[5%]
+    top-[55%]
+
+    hidden 
+    md:hidden
+    lg:block
+
+    w-[60px]
+    md:w-[80px]
+    lg:w-[100px]
+
+    z-0
+    pointer-events-none
+  "
+/>
+
+<img
+  src={polygon1}
+  alt=""
+  className="
+    absolute
+
+    left-[30%]
+    bottom-[5%]
+
+    w-[100px]
+    md:w-[90px]
+    lg:w-[110px]
+
+    z-30
+    pointer-events-none
+  "
+/>
+
 
            <img
     src={vector2517}

@@ -13,7 +13,7 @@ import vector from "../assets/Vector 5.svg";
 
 function Testimonial() {
   return (
-    <section className="py-16 lg:py-24">
+    <section  className="py-16 lg:py-24">
 
 
 

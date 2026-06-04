@@ -1,5 +1,6 @@
 import lines from "../assets/line 22.svg";
 
+
 function navbar() {
   return (
     <nav className="flex items-center justify-between px-8 py-4">

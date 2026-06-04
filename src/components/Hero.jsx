@@ -1,4 +1,6 @@
 import vector from "../assets/Vector 5.svg";
+import vector10 from "../assets/Vector 2510.svg";
+import vector11 from "../assets/Vector 2511.svg";
 import rectanglepink from "../assets/Rectangle.pink.svg";
 import rectanglegreen from "../assets/Rectangle 658.svg";
 import Ellipse736 from "../assets/Ellipse736.svg";
@@ -15,6 +17,48 @@ import img8 from "../assets/Ellipse 262.png";
 function Hero() {
   return (
     <section className="relative overflow-hidden px-4">
+
+
+{/* Black Vector */}
+
+<img
+  src={vector10}
+  alt=""
+  className="
+    absolute
+
+    left-0
+    top-[180px]
+
+    w-[25px]
+    md:w-[45px]
+    lg:w-[50px]
+
+    z-0
+    pointer-events-none
+  "
+/>
+
+{/* Red Vector */}
+
+<img
+  src={vector11}
+  alt=""
+  className="
+    absolute
+
+    left-[25px]
+    top-[170px]
+
+    w-[30px]
+    md:w-[70px]
+    lg:w-[60px]
+
+    z-0
+    pointer-events-none
+  "
+/>
+
 
     {/* Pink Rectangle */}
 <img

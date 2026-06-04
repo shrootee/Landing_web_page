@@ -3,7 +3,7 @@ import vector from "../assets/Vector 5.svg";
 
 function Services() {
   return (
-   <section className="relative py-16 lg:py-24">
+   <section id="services" className="relative py-16 lg:py-24">
 
   <div className="max-w-[1200px] mx-auto px-4">
 
