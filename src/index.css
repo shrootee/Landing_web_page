@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  background-color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Bold.otf");
+  font-weight: 700;
+}
+
+
+
+.font-satoshi {
+  font-family: "Satoshi";
+}
+
+@font-face {
+  font-family: "Gerbil";
+  src: url("./assets/fonts/Gerbil.otf");
+  font-style: normal;
+}
+
+.font-gerbil {
+  font-family: "Gerbil";
+}
