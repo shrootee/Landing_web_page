@@ -1,39 +1,128 @@
 @import "tailwindcss";
 
-body {
-  background-color: #FFFFFF;
-}
-
 @font-face {
   font-family: "Satoshi";
-  src: url("./assets/fonts/Satoshi-Regular.otf");
+  src: url("./assets/fonts/Satoshi-Regular.otf") format("opentype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("./assets/fonts/Satoshi-Medium.otf");
+  src: url("./assets/fonts/Satoshi-Medium.otf") format("opentype");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("./assets/fonts/Satoshi-Bold.otf");
+  src: url("./assets/fonts/Satoshi-Bold.otf") format("opentype");
   font-weight: 700;
+  font-display: swap;
 }
 
-
-
-.font-satoshi {
+@font-face {
   font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Black.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Gerbil";
-  src: url("./assets/fonts/Gerbil.otf");
+  src: url("./assets/fonts/gerbil.otf") format("opentype");
   font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-satoshi: "Satoshi", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-gerbil: "Gerbil", "Syne", sans-serif;
+}
+
+.font-satoshi {
+  font-family: var(--font-satoshi);
 }
 
 .font-gerbil {
-  font-family: "Gerbil";
+  font-family: var(--font-gerbil);
+  letter-spacing: -0.03em;
+}
+
+/* Custom smooth animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-1deg);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 7s ease-in-out infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Subtle architectural dot grid */
+.bg-grid-subtle {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism token */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D4CF;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A3A39D;
 }

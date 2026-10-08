@@ -3,17 +3,20 @@ import Hero from "./components/Hero";
 import Feature from "./components/Features";
 import Services from "./components/services";
 import Testimonial from "./components/Testimonial";
+import Faq from "./components/Faq";
 import Footer from "./components/Footer";
-import { Features } from "tailwindcss";
 
 function App() {
   return (
-    <div className="max-w-[1920px] mx-auto">
+    <div className="min-h-screen bg-[#FAF9F6] text-[#141517] selection:bg-[#D7EEDD] selection:text-[#141517]">
       <Navbar />
-      <Hero />
-      <Feature />
-      <Services />
-      <Testimonial />
+      <main>
+        <Hero />
+        <Feature />
+        <Services />
+        <Testimonial />
+        <Faq />
+      </main>
       <Footer />
     </div>
   );
